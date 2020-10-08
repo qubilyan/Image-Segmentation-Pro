@@ -18,4 +18,8 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 
 /* convolution */
 
-#ifndef
+#ifndef CONVOLVE_H
+#define CONVOLVE_H
+
+#include <vector>
+#include <algori
