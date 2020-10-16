@@ -24,4 +24,6 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 #include <vector>
 #include <algorithm>
 #include <cmath>
-#include "imag
+#include "image.h"
+
+/* convolve src with mask.  dst is flipped! */
