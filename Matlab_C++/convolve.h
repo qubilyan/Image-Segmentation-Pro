@@ -27,4 +27,5 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 #include "image.h"
 
 /* convolve src with mask.  dst is flipped! */
-static void convolve_even(image<float> *src,
+static void convolve_even(image<float> *src, image<float> *dst, 
+			  std::vector<float> &mask) {
