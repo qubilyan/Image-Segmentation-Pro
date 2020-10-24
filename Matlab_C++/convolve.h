@@ -34,4 +34,5 @@ static void convolve_even(image<float> *src, image<float> *dst,
   int len = mask.size();
 
   for (int y = 0; y < height; y++) {
-    for (in
+    for (int x = 0; x < width; x++) {
+      float sum = m
