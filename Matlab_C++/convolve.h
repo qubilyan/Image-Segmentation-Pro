@@ -38,4 +38,5 @@ static void convolve_even(image<float> *src, image<float> *dst,
       float sum = mask[0] * imRef(src, x, y);
       for (int i = 1; i < len; i++) {
 	sum += mask[i] * 
-	  (imRef(src,
+	  (imRef(src, std::max(x-i,0), y) + 
+	   imRef(src, std::min(x+i
