@@ -51,4 +51,7 @@ static void convolve_odd(image<float> *src, image<float> *dst,
 			 std::vector<float> &mask) {
   int width = src->width();
   int height = src->height();
-  int len = mask.size
+  int len = mask.size();
+
+  for (int y = 0; y < height; y++) {
+    for
