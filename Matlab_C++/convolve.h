@@ -58,4 +58,5 @@ static void convolve_odd(image<float> *src, image<float> *dst,
       float sum = mask[0] * imRef(src, x, y);
       for (int i = 1; i < len; i++) {
 	sum += mask[i] * 
-	  (imRe
+	  (imRef(src, std::max(x-i,0), y) - 
+	   
