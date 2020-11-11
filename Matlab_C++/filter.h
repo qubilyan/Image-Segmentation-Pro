@@ -94,3 +94,8 @@ static image<float> *laplacian(image<float> *src) {
 	2*imRef(src, x, y);
       imRef(dst, x, y) = d2x + d2y;
     }
+  }
+  return dst;
+}
+
+#endif
