@@ -22,4 +22,6 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 #define IMUTIL_H
 
 #include "image.h"
-#incl
+#include "misc.h"
+
+/* compute minimum and maximum val
