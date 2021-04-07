@@ -26,4 +26,4 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 
 /* compute minimum and maximum value in an image */
 template <class T>
-voi
+void min_max(image<T> *im, T *ret_min, T *re
