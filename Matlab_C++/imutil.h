@@ -31,4 +31,5 @@ void min_max(image<T> *im, T *ret_min, T *ret_max) {
   int height = im->height();
   
   T min = imRef(im, 0, 0);
-  T max
+  T max = imRef(im, 0, 0);
+  for (int y = 0; y < he
