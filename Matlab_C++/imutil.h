@@ -38,4 +38,10 @@ void min_max(image<T> *im, T *ret_min, T *ret_max) {
       if (min > val)
 	min = val;
       if (max < val)
-	max = v
+	max = val;
+    }
+  }
+
+  *ret_min = min;
+  *ret_max = max;
+} 
