@@ -55,3 +55,4 @@ image<uchar> *threshold(image<T> *src, int t) {
   
   for (int y = 0; y < height; y++) {
     for (int x = 0; x < width; x++) {
+      imRef(dst, x, y) = (imRef(src, x, y) >= t);
