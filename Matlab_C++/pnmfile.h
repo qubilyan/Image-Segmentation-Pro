@@ -101,3 +101,49 @@ static image<uchar> *loadPBM(const char *name) {
   for (int i = 0; i < height; i++)
     read_packed(imPtr(im, 0, i), width, file);
   
+  return im;
+}
+
+static void savePBM(image<uchar> *im, const char *name) {
+  int width = im->width();
+  int height = im->height();
+  std::ofstream file(name, std::ios::out | std::ios::binary);
+
+  file << "P4\n" << width << " " << height << "\n";
+  for (int i = 0; i < height; i++)
+    write_packed(imPtr(im, 0, i), width, file);
+}
+
+static image<uchar> *loadPGM(const char *name) {
+  char buf[BUF_SIZE];
+  
+  /* read header */
+  std::ifstream file(name, std::ios::in | std::ios::binary);
+  pnm_read(file, buf);
+  if (strncmp(buf, "P5", 2))
+  {
+  	fprintf(stderr, "PGM: Header error\n");  
+    throw pnm_error();
+  }
+
+  pnm_read(file, buf);
+  int width = atoi(buf);
+  pnm_read(file, buf);
+  int height = atoi(buf);
+
+  pnm_read(file, buf);
+  if (atoi(buf) > UCHAR_MAX)
+  {
+  	fprintf(stderr, "PGM: Read error\n");  
+    throw pnm_error();
+	}
+	
+  /* read data */
+  image<uchar> *im = new image<uchar>(width, height);
+  file.read((char *)imPtr(im, 0, 0), width * height * sizeof(uchar));
+
+  return im;
+}
+
+static void savePGM(image<uchar> *im, const char *name) {
+  int width = im->width();
