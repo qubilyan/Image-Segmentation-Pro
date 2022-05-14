@@ -13,3 +13,5 @@ with a random color assigned to each region.
 2) Run "segment sigma k min input output".
 
 The parameters are: (see the paper for details)
+
+sigma: Used to smooth the input image before segment
