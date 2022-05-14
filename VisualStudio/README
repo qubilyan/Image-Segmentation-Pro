@@ -14,4 +14,6 @@ with a random color assigned to each region.
 
 The parameters are: (see the paper for details)
 
-sigma: Used to smooth the input image before segment
+sigma: Used to smooth the input image before segmenting it.
+k: Value for the threshold function.
+m
