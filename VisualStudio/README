@@ -8,4 +8,6 @@ International Journal of Computer Vision, 59(2) September 2004.
 The program takes a color image (PPM format) and produces a segmentation
 with a random color assigned to each region.
 
-1) Type "make" to compile "se
+1) Type "make" to compile "segment".
+
+2) Run "segment sigma k min input output".
