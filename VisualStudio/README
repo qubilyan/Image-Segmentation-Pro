@@ -20,4 +20,5 @@ min: Minimum component size enforced by post-processing.
 input: Input image.
 output: Output image.
 
-Typical p
+Typical parameters are sigma = 0.5, k = 500, min = 20.
+La
