@@ -1,4 +1,4 @@
 /*
 Copyright (C) 2006 Pedro Felzenszwalb
 
-This progr
+This program is free software; you can redistribute it and/
