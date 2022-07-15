@@ -30,4 +30,5 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 
 #define WIDTH 4.0
 
-/* normalize ma
+/* normalize mask so it integrates to one */
+static void nor
