@@ -32,4 +32,6 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 
 /* normalize mask so it integrates to one */
 static void normalize(std::vector<float> &mask) {
-  int len = mask
+  int len = mask.size();
+  float sum = 0;
+  for (int i = 1; i < len; 
