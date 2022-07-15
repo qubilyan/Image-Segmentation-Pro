@@ -31,4 +31,5 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 #define WIDTH 4.0
 
 /* normalize mask so it integrates to one */
-static void nor
+static void normalize(std::vector<float> &mask) {
+  int len = mask
