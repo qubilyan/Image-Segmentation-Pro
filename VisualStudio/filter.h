@@ -34,4 +34,5 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 static void normalize(std::vector<float> &mask) {
   int len = mask.size();
   float sum = 0;
-  for (int i = 1; i < len; 
+  for (int i = 1; i < len; i++) {
+    sum += fabs(mask[i]);
