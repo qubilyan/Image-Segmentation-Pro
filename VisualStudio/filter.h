@@ -38,4 +38,5 @@ static void normalize(std::vector<float> &mask) {
     sum += fabs(mask[i]);
   }
   sum = 2*sum + fabs(mask[0]);
-  for (i
+  for (int i = 0; i < len; i++) {
+    mask[i] /= sum;
