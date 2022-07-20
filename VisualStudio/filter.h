@@ -40,3 +40,8 @@ static void normalize(std::vector<float> &mask) {
   sum = 2*sum + fabs(mask[0]);
   for (int i = 0; i < len; i++) {
     mask[i] /= sum;
+  }
+}
+
+/* make filters */
+#define MAKE_FILTER(name, 
