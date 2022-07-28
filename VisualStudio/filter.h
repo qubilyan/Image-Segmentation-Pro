@@ -44,4 +44,5 @@ static void normalize(std::vector<float> &mask) {
 }
 
 /* make filters */
-#define MAKE_FILTER(name, 
+#define MAKE_FILTER(name, fun)                                \
+static st
