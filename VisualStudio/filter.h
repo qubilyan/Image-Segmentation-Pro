@@ -45,4 +45,4 @@ static void normalize(std::vector<float> &mask) {
 
 /* make filters */
 #define MAKE_FILTER(name, fun)                                \
-static st
+static std::vector<float> make_ ## name (float sigm
