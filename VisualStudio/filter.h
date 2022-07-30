@@ -45,4 +45,5 @@ static void normalize(std::vector<float> &mask) {
 
 /* make filters */
 #define MAKE_FILTER(name, fun)                                \
-static std::vector<float> make_ ## name (float sigm
+static std::vector<float> make_ ## name (float sigma) {       \
+  sigma = std::max(sigma, 0.01F
