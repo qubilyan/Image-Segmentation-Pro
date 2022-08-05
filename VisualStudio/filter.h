@@ -47,4 +47,5 @@ static void normalize(std::vector<float> &mask) {
 #define MAKE_FILTER(name, fun)                                \
 static std::vector<float> make_ ## name (float sigma) {       \
   sigma = std::max(sigma, 0.01F);			      \
-  int len = (int)ceil(sigma * WIDTH) + 1;
+  int len = (int)ceil(sigma * WIDTH) + 1;                     \
+  std::vector<float> mask(
