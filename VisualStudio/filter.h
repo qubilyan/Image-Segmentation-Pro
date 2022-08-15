@@ -51,4 +51,5 @@ static std::vector<float> make_ ## name (float sigma) {       \
   std::vector<float> mask(len);                               \
   for (int i = 0; i < len; i++) {                             \
     mask[i] = fun;                                            \
-  }                           
+  }                                                           \
+  return ma
