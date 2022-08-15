@@ -50,4 +50,5 @@ static std::vector<float> make_ ## name (float sigma) {       \
   int len = (int)ceil(sigma * WIDTH) + 1;                     \
   std::vector<float> mask(len);                               \
   for (int i = 0; i < len; i++) {                             \
-    mask[i] = fun;                          
+    mask[i] = fun;                                            \
+  }                           
