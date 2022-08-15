@@ -49,4 +49,5 @@ static std::vector<float> make_ ## name (float sigma) {       \
   sigma = std::max(sigma, 0.01F);			      \
   int len = (int)ceil(sigma * WIDTH) + 1;                     \
   std::vector<float> mask(len);                               \
-  for (int i = 0; i < len; i++) {                       
+  for (int i = 0; i < len; i++) {                             \
+    mask[i] = fun;                          
