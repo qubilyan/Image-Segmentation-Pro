@@ -52,4 +52,4 @@ static std::vector<float> make_ ## name (float sigma) {       \
   for (int i = 0; i < len; i++) {                             \
     mask[i] = fun;                                            \
   }                                                           \
-  return ma
+  return mask;                                       
