@@ -62,4 +62,5 @@ static image<float> *smooth(image<float> *src, float sigma) {
   std::vector<float> mask = make_fgauss(sigma);
   normalize(mask);
 
-  image<float> *tmp = new image<float>(s
+  image<float> *tmp = new image<float>(src->height(), src->width(), false);
+  image<float>
