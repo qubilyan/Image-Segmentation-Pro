@@ -63,4 +63,4 @@ static image<float> *smooth(image<float> *src, float sigma) {
   normalize(mask);
 
   image<float> *tmp = new image<float>(src->height(), src->width(), false);
-  image<float>
+  image<float> *dst = new image<float>(src->width(), src->height(),
