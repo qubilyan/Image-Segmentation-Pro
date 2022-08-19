@@ -60,4 +60,6 @@ MAKE_FILTER(fgauss, exp(-0.5*square(i/sigma)));
 /* convolve image with gaussian filter */
 static image<float> *smooth(image<float> *src, float sigma) {
   std::vector<float> mask = make_fgauss(sigma);
-  normalize(mas
+  normalize(mask);
+
+  image<float> *tmp = new image<float>(s
