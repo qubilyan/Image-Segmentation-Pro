@@ -65,3 +65,7 @@ static image<float> *smooth(image<float> *src, float sigma) {
   image<float> *tmp = new image<float>(src->height(), src->width(), false);
   image<float> *dst = new image<float>(src->width(), src->height(), false);
   convolve_even(src, tmp, mask);
+  convolve_even(tmp, dst, mask);
+
+  delete tmp;
+  return
