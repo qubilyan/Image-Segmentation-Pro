@@ -68,4 +68,7 @@ static image<float> *smooth(image<float> *src, float sigma) {
   convolve_even(tmp, dst, mask);
 
   delete tmp;
-  return
+  return dst;
+}
+
+/* convolve image with gaussian filter */
