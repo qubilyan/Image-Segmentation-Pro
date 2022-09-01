@@ -74,4 +74,6 @@ static image<float> *smooth(image<float> *src, float sigma) {
 /* convolve image with gaussian filter */
 image<float> *smooth(image<uchar> *src, float sigma) {
   image<float> *tmp = imageUCHARtoFLOAT(src);
-  image
+  image<float> *dst = smooth(tmp, sigma);
+  delete tmp;
+  retur
