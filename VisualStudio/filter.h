@@ -76,4 +76,8 @@ image<float> *smooth(image<uchar> *src, float sigma) {
   image<float> *tmp = imageUCHARtoFLOAT(src);
   image<float> *dst = smooth(tmp, sigma);
   delete tmp;
-  retur
+  return dst;
+}
+
+/* compute laplacian */
+static image<float> *l
