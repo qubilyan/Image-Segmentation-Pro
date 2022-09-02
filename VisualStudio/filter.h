@@ -80,4 +80,5 @@ image<float> *smooth(image<uchar> *src, float sigma) {
 }
 
 /* compute laplacian */
-static image<float> *l
+static image<float> *laplacian(image<float> *src) {
+  int width = src->widt
