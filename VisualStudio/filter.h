@@ -83,4 +83,4 @@ image<float> *smooth(image<uchar> *src, float sigma) {
 static image<float> *laplacian(image<float> *src) {
   int width = src->width();
   int height = src->height();
-  image<flo
+  image<float> *dst = new image<float>(width, heig
