@@ -87,4 +87,5 @@ static image<float> *laplacian(image<float> *src) {
 
   for (int y = 1; y < height-1; y++) {
     for (int x = 1; x < width-1; x++) {
-      float d2x = imRef(src
+      float d2x = imRef(src, x-1, y) + imRef(src, x+1, y) -
+	2*imRef(src, 
