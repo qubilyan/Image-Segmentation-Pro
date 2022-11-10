@@ -24,4 +24,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
 #include <cstring>
 
 template <class T>
-class im
+class image {
+ public:
+  /* create an image */
+  image(const
