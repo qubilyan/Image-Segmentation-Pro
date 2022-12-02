@@ -33,4 +33,7 @@ class image {
   ~image();
 
   /* init an image */
-  void init(const T &v
+  void init(const T &val);
+
+  /* copy an image */
+  image<T> *copy(
