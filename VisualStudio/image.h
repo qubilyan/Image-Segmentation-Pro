@@ -41,4 +41,5 @@ class image {
   /* get the width of an image. */
   int width() const { return w; }
   
-  /* ge
+  /* get the height of an image. */
+  int height() co
