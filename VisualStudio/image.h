@@ -32,3 +32,5 @@ class image {
   /* delete an image */
   ~image();
 
+  /* init an image */
+  void init(const T &v
