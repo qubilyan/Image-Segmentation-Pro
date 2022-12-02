@@ -42,4 +42,6 @@ class image {
   int width() const { return w; }
   
   /* get the height of an image. */
-  int height() co
+  int height() const { return h; }
+  
+  /* image data. */
