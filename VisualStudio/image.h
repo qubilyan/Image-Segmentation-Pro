@@ -27,4 +27,8 @@ template <class T>
 class image {
  public:
   /* create an image */
-  image(const int width, const int height, const bool init 
+  image(const int width, const int height, const bool init = true);
+
+  /* delete an image */
+  ~image();
+
