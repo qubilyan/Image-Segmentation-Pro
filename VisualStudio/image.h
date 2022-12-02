@@ -39,4 +39,6 @@ class image {
   image<T> *copy() const;
   
   /* get the width of an image. */
-  int wi
+  int width() const { return w; }
+  
+  /* ge
