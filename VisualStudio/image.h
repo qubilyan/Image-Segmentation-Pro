@@ -36,4 +36,7 @@ class image {
   void init(const T &val);
 
   /* copy an image */
-  image<T> *copy(
+  image<T> *copy() const;
+  
+  /* get the width of an image. */
+  int wi
