@@ -48,4 +48,10 @@ class image {
   T *data;
   
   /* row pointers. */
-  T **acces
+  T **access;
+  
+ private:
+  int w, h;
+};
+
+/* use i
