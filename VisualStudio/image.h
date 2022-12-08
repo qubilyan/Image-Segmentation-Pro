@@ -54,4 +54,5 @@ class image {
   int w, h;
 };
 
-/* use i
+/* use imRef to access image data. */
+#define imRef(i
