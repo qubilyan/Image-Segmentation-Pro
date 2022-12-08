@@ -45,3 +45,7 @@ class image {
   int height() const { return h; }
   
   /* image data. */
+  T *data;
+  
+  /* row pointers. */
+  T **acces
