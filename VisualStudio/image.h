@@ -55,4 +55,6 @@ class image {
 };
 
 /* use imRef to access image data. */
-#define imRef(i
+#define imRef(im, x, y) (im->access[y][x])
+  
+/* use imP
