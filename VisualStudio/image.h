@@ -60,4 +60,5 @@ class image {
 /* use imPtr to get pointer to image data. */
 #define imPtr(im, x, y) &(im->access[y][x])
 
-tem
+template <class T>
+image<T>::image(const int width, const i
