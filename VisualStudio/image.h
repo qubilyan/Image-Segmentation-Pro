@@ -61,4 +61,6 @@ class image {
 #define imPtr(im, x, y) &(im->access[y][x])
 
 template <class T>
-image<T>::image(const int width, const i
+image<T>::image(const int width, const int height, const bool init) {
+  w = width;
+  h =
