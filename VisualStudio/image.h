@@ -83,4 +83,7 @@ image<T>::~image() {
 
 template <class T>
 void image<T>::init(const T &val) {
-  T *ptr = imPtr(this, 
+  T *ptr = imPtr(this, 0, 0);
+  T *end = imPtr(this, w-1, h-1);
+  while (ptr <= end)
+    *p
