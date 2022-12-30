@@ -72,4 +72,8 @@ image<T>::image(const int width, const int height, const bool init) {
     access[i] = data + (i * w);  
   
   if (init)
-    memset(data, 0, w * 
+    memset(data, 0, w * h * sizeof(T));
+}
+
+template <class T>
+image<T
