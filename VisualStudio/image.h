@@ -68,4 +68,5 @@ image<T>::image(const int width, const int height, const bool init) {
   access = new T*[h];   // allocate space for row pointers
   
   // initialize row pointers
-  for (in
+  for (int i = 0; i < h; i++)
+    access[i] = data 
