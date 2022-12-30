@@ -64,4 +64,5 @@ template <class T>
 image<T>::image(const int width, const int height, const bool init) {
   w = width;
   h = height;
-  data = new T[w * h];  // allocate space
+  data = new T[w * h];  // allocate space for image data
+  access = new T*[h];   // allocate s
