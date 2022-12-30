@@ -69,4 +69,7 @@ image<T>::image(const int width, const int height, const bool init) {
   
   // initialize row pointers
   for (int i = 0; i < h; i++)
-    access[i] = data 
+    access[i] = data + (i * w);  
+  
+  if (init)
+    memset(data, 0, w * 
