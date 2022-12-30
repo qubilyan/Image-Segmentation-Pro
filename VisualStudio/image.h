@@ -82,4 +82,5 @@ image<T>::~image() {
 }
 
 template <class T>
-void image<T>::init
+void image<T>::init(const T &val) {
+  T *ptr = imPtr(this, 
