@@ -91,4 +91,5 @@ void image<T>::init(const T &val) {
 
 
 template <class T>
-ima
+image<T> *image<T>::copy() const {
+  image<T> *i
