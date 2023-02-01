@@ -92,4 +92,5 @@ void image<T>::init(const T &val) {
 
 template <class T>
 image<T> *image<T>::copy() const {
-  image<T> *i
+  image<T> *im = new image<T>(w, h, false);
+  memcpy(im->dat
