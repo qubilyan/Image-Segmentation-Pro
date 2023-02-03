@@ -160,3 +160,19 @@ static image<uchar> *imageSHORTtoUCHAR(image<short> *input,
     return output;
 
   float scale = UCHAR_MAX / (float)(max - min);
+  for (int y = 0; y < height; y++) {
+    for (int x = 0; x < width; x++) {
+      uchar val = (uchar)((imRef(input, x, y) - min) * scale);
+      imRef(output, x, y) = bound(val, (uchar)0, (uchar)UCHAR_MAX);
+    }
+  }
+  return output;
+}
+
+static image<uchar> *imageSHORTtoUCHAR(image<short> *input) {
+  short min, max;
+  min_max(input, &min, &max);
+  return imageSHORTtoUCHAR(input, min, max);
+}
+
+#endif
