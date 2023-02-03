@@ -87,3 +87,33 @@ static image<float> *imageINTtoFLOAT(image<int> *input) {
   }
   return output;  
 }
+
+static image<uchar> *imageFLOATtoUCHAR(image<float> *input, 
+				       float min, float max) {
+  int width = input->width();
+  int height = input->height();
+  image<uchar> *output = new image<uchar>(width, height, false);
+
+  if (max == min)
+    return output;
+
+  float scale = UCHAR_MAX / (max - min);
+  for (int y = 0; y < height; y++) {
+    for (int x = 0; x < width; x++) {
+      uchar val = (uchar)((imRef(input, x, y) - min) * scale);
+      imRef(output, x, y) = bound(val, (uchar)0, (uchar)UCHAR_MAX);
+    }
+  }
+  return output;
+}
+
+static image<uchar> *imageFLOATtoUCHAR(image<float> *input) {
+  float min, max;
+  min_max(input, &min, &max);
+  return imageFLOATtoUCHAR(input, min, max);
+}
+
+static image<long> *imageUCHARtoLONG(image<uchar> *input) {
+  int width = input->width();
+  int height = input->height();
+  image<long> *output = new image<long>(width, height, false);
