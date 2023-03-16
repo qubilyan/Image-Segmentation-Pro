@@ -30,4 +30,5 @@ void min_max(image<T> *im, T *ret_min, T *ret_max) {
   int width = im->width();
   int height = im->height();
   
-  T
+  T min = imRef(im, 0, 0);
+  T max = imRe
