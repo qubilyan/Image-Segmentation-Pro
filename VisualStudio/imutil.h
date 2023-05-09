@@ -46,4 +46,6 @@ void min_max(image<T> *im, T *ret_min, T *ret_max) {
   *ret_max = max;
 } 
 
-/* threshold im
+/* threshold image */
+template <class T>
+image<uchar> *threshold(image<T>
