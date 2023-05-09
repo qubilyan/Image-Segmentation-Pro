@@ -37,4 +37,9 @@ void min_max(image<T> *im, T *ret_min, T *ret_max) {
       T val = imRef(im, x, y);
       if (min > val)
 	min = val;
-  
+      if (max < val)
+	max = val;
+    }
+  }
+
+  *
