@@ -62,3 +62,5 @@ inline int vlib_round(double x) { return (int)(x + 0.5); }
 inline double gaussian(double val, double sigma) {
   return exp(-square(val/sigma)/2)/(sqrt(2*M_PI)*sigma);
 }
+
+#endif
