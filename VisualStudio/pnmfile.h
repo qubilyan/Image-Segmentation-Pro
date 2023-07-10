@@ -185,3 +185,28 @@ void load_image(image<T> **im, const char *name) {
   
   /* read header */
   std::ifstream file(name, std::ios::in | std::ios::binary);
+  pnm_read(file, buf);
+  if (strncmp(buf, "VLIB", 9))
+    throw pnm_error();
+
+  pnm_read(file, buf);
+  int width = atoi(buf);
+  pnm_read(file, buf);
+  int height = atoi(buf);
+
+  /* read data */
+  *im = new image<T>(width, height);
+  file.read((char *)imPtr((*im), 0, 0), width * height * sizeof(T));
+}
+
+template <class T>
+void save_image(image<T> *im, const char *name) {
+  int width = im->width();
+  int height = im->height();
+  std::ofstream file(name, std::ios::out | std::ios::binary);
+
+  file << "VLIB\n" << width << " " << height << "\n";
+  file.write((char *)imPtr(im, 0, 0), width * height * sizeof(T));
+}
+
+#endif
