@@ -6,4 +6,4 @@ The project includes codes for Visual Studio 2015 and Matlab mex solutions.
 
 ## Execution Guide
 
-1. In the 'VisualStudio' folder, Debug and Release include 32-bit files, whi
+1. In the 'VisualStudio' folder, Debug and Release include 32-bit files, while x64 houses the 64-bit files. To execute, us
