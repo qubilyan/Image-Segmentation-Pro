@@ -8,4 +8,6 @@ The project includes codes for Visual Studio 2015 and Matlab mex solutions.
 
 1. In the 'VisualStudio' folder, Debug and Release include 32-bit files, while x64 houses the 64-bit files. To execute, use the following command in windows command line: `EGSeg.exe sigma k min_z input output`. Here, both input and output must be of ppm image file type.
 For example: `EGSeg.exe 0.5 1000 20 emir.ppm out.ppm`
-After execution, you can obtain the segment
+After execution, you can obtain the segmented output as `out.ppm` image.
+
+2. Insi
