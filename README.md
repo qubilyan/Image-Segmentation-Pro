@@ -10,4 +10,6 @@ The project includes codes for Visual Studio 2015 and Matlab mex solutions.
 For example: `EGSeg.exe 0.5 1000 20 emir.ppm out.ppm`
 After execution, you can obtain the segmented output as `out.ppm` image.
 
-2. Inside the 'Matlab_C++' folder, simply run `demo.m` for compilation of the C++ file and to get
+2. Inside the 'Matlab_C++' folder, simply run `demo.m` for compilation of the C++ file and to get the segmented output.
+
+Enjoy your time exploring!
